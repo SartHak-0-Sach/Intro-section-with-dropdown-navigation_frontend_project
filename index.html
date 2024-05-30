@@ -1,39 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css-reset.css" />
+    <link rel="stylesheet" href="/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- HEADER -->
+      <header class="header p-inline">
+        <img src="/images/logo.svg" alt="snap logo" />
 
-  Features
-  Company
-  Careers
-  About
+        <!-- NAVBAR -->
+        <nav class="navbar">
+          <button class="btn-hamburger" id="btnHamburger">
+            <img src="/images/icon-menu.svg" alt="hamburger icon" />
+          </button>
+          <div class="navbar-bg" id="navBar">
+            <div class="navbar-menu">
+              <button class="btn-close" id="btnClose">
+                <img src="/images/icon-close-menu.svg" alt="close menu icon" />
+              </button>
+              <ul class="navbar-links">
+                <li class="nav-link">
+                  <button class="nav-link-title">
+                    Features
+                    <span>
+                      <img
+                        src="/images/icon-arrow-down.svg"
+                        alt="expand menu"
+                      />
+                    </span>
+                  </button>
+                  <ul class="subnav-menu">
+                    <li class="subnav-link">
+                      <img src="/images/icon-todo.svg" alt="to-do icon" />
+                      Todo List
+                    </li>
+                    <li class="subnav-link">
+                      <img
+                        src="/images/icon-calendar.svg"
+                        alt="calendar icon"
+                      />Calendar
+                    </li>
+                    <li class="subnav-link">
+                      <img
+                        src="/images/icon-reminders.svg"
+                        alt="reminders icon"
+                      />Reminders
+                    </li>
+                    <li class="subnav-link">
+                      <img
+                        src="/images/icon-planning.svg"
+                        alt="planning icon"
+                      />Planning
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-link">
+                  <button class="nav-link-title">
+                    Company
+                    <span>
+                      <img
+                        src="/images/icon-arrow-down.svg"
+                        alt="expand menu"
+                      />
+                    </span>
+                  </button>
+                  <ul class="subnav-menu">
+                    <li class="subnav-link">History</li>
+                    <li class="subnav-link">Our Team</li>
+                    <li class="subnav-link">Blog</li>
+                  </ul>
+                </li>
+                <li class="nav-link">
+                  <button class="nav-link-title">Careers</button>
+                </li>
+                <li class="nav-link">
+                  <button class="nav-link-title">About</button>
+                </li>
+              </ul>
 
-  Login
-  Register
+              <!-- NAVBAR ACTIONS -->
+              <div class="navbar-actions">
+                <button class="btn-login">Login</button>
+                <button class="btn-register">Register</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-  Make remote work
+      <!-- HERO -->
+      <section class="hero">
+        <picture class="hero-img">
+          <source
+            media="(max-width: 900px)"
+            srcset="/images/image-hero-mobile.png"
+          />
+          <img
+            src="/images/image-hero-desktop.png"
+            alt="man with laptop in his hands"
+          />
+        </picture>
+        <div class="hero-content p-inline">
+          <h1>
+            Make<br class="heading-lb" />
+            remote work
+          </h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn btn-cta">Learn more</button>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <!-- CLIENTS -->
+          <div class="clients">
+            <img
+              src="/images/client-databiz.svg"
+              alt="databiz logo"
+              class="clients-img"
+            />
+            <img
+              src="/images/client-audiophile.svg"
+              alt="audiophile logo"
+              class="clients-img scale-down"
+            />
+            <img
+              src="/images/client-meet.svg"
+              alt="meet logo"
+              class="clients-img"
+            />
+            <img
+              src="/images/client-maker.svg"
+              alt="maker logo"
+              class="clients-img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/script.js"></script>
+  </body>
 </html>
