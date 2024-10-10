@@ -356,7 +356,8 @@ transform: scale(0.7);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: blue !important;
+    text-decoration: underline;
 }
 
 /* Tablet Styles / 640px */
