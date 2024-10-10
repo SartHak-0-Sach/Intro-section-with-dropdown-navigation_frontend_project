@@ -344,6 +344,21 @@ transform: scale(0.7);
   filter: brightness(0%) contrast(0%);
 }
 
+/* Footer */
+.attribution {
+    position: absolute;
+    bottom: .8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 /* Tablet Styles / 640px */
 
 @media only screen and (min-width: 40em) {
